@@ -47,13 +47,13 @@ export class TarjetaCreditoComponent implements OnInit {
     }
 
     if(this.id == undefined){
+      //Agregamos nueva tarjeta
       this._dataService.saveTarjeta(tarjeta)
         .subscribe( res => {
           this.obtenerTarjetas();
           this.toastr.success('Success', 'se ha creado exitosamente');
           this.myForm.reset();
       })
-      //Agregamos nueva tarjeta
     }else{
       //editamos tarjetas
       tarjeta.id = this.id
