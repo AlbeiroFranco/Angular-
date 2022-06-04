@@ -1,0 +1,49 @@
+{
+  "unidad": [
+    {
+      "id": 1,
+      "codigo": "AZ",
+      "descripcion": "AZ",
+      "nivel": "Subserie",
+      "folios": 400,
+      "asociated": true
+    },
+    {
+      "id": 2,
+      "codigo": "CA",
+      "descripcion": "Carpeta",
+      "nivel": "Subserie",
+      "folios": 200,
+      "asociated": true
+    },
+    {
+      "id": 3,
+      "codigo": "DO",
+      "descripcion": "Documento",
+      "nivel": "Tipología",
+      "folios": "N/A",
+      "asociated": true
+    },
+    {
+      "id": 6,
+      "codigo": "FO",
+      "descripcion": "Folder",
+      "nivel": "Subserie",
+      "folios": "200"
+    },
+    {
+      "id": 7,
+      "codigo": "NE",
+      "descripcion": "Nuevo",
+      "nivel": "Subserie",
+      "folios": "400"
+    },
+    {
+      "id": 8,
+      "codigo": "CA",
+      "descripcion": "Carpetica",
+      "nivel": "Subserie",
+      "folios": "200"
+    }
+  ]
+}
