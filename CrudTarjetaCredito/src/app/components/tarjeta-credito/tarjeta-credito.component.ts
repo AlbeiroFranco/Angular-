@@ -94,7 +94,7 @@ export class TarjetaCreditoComponent implements OnInit {
     /* this.listaTarjetas.splice(index, 1); */
     this._dataService.deleteTarjeta(id)
       .subscribe(res => {
-        this.obtenerTarjetas = res;
+        this.obtenerTarjetas();
         this.toastr.success('Success', 'Se elimino correctamente')
       })
     

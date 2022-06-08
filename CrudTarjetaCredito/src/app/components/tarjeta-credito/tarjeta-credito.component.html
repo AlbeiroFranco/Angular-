@@ -8,13 +8,13 @@
             </div>
         </div>
     </div>
-
+<form [formGroup]="myForm" >
     <div class="row mt-4">
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-body">
                     <h5 class="text-center">{{accion | uppercase }} TARJETA</h5>
-                        <form [formGroup]="myForm" (ngSubmit)="guardarTarjeta()">
+                        
                             <div class="input-group mb-3">
                                 <span class="input-group-text">
                                     <i class="fa-solid fa-user" 
@@ -58,10 +58,10 @@
                                 </div>
                             </div>
                             <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-success" [disabled]="this.myForm.invalid">Aceptar</button>
+                                <button type="submit" class="btn btn-success" [disabled]="this.myForm.invalid" (click)="guardarTarjeta()">Aceptar</button>
                             </div>
 
-                        </form>
+                       
                 </div>
             </div>
         </div>
@@ -84,8 +84,14 @@
                                 <td>{{datos.numeroTarjeta}}</td>
                                 <td>{{datos.fechaExpiracion}}</td>
                                 <td>
-                                    <i class="fa-solid fa-pen text-primary" (click)="editar(datos)"></i>
-                                    <i class="fa-solid fa-trash ms-3 text-danger"(click)="eliminar(datos.id)"></i>
+                                    <div>
+                                        <button type="submit" (click)="editar(datos)">
+                                            <i class="fa-solid fa-pen text-primary" ></i>
+                                        </button>
+                                        <button type="submit" (click)="eliminar(datos.id)">
+                                            <i class="fa-solid fa-trash ms-3 text-danger"></i>
+                                        </button>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -94,4 +100,5 @@
             </div>
         </div>
     </div>
+</form>
 </div>
