@@ -1,0 +1,16 @@
+thead{
+    background-color: #428BCA;
+    color: white;
+    border: none;
+    vertical-align:middle;
+    
+}
+
+.success {
+    color: #5CB85C;
+}
+
+button[type=submit]{
+    border: none;
+    background: none;
+}
